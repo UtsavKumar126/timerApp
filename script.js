@@ -40,6 +40,7 @@ function createTimer(timeInSec){
             clearInterval(timeInterval)
             timerDisplay.innerHTML=`
             <div>Time is Up !</div>
+            <button id="setBut" onclick="deleteTimer(this)">Delete</button>
         `
         timerDisplay.className="timers2"
         audioFile.play();
